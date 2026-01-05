@@ -12,6 +12,42 @@ npm run develop
 
 Once the server is running, open your browser and navigate to `http://localhost:4206/`. The application will automatically reload whenever you modify any of the source files.
 
+## Cloning Guide
+
+1.  Clone only the remote primary HEAD (default: origin/main)
+
+```bash
+git clone <url> --single-branch
+```
+
+2. Only specific branch
+
+```bash
+git clone <url> --branch <branch> --single-branch [<folder>]
+```
+
+```bash
+git clone <url> --branch <branch>
+```
+
+3. Cloning repositories using degit
+
+   - main branch is default.
+
+```bash
+npx degit github:user/repo#branch-name <folder-name>
+```
+
+4. Cloning this project with skeleton
+
+```bash
+git clone https://github.com/actionanand/universal-calendar.git --branch 1-skeleton angular-proj-name
+```
+
+```bash
+npx degit github:actionanand/universal-calendar#1-skeleton angular-proj-name
+```
+
 ## Code scaffolding
 
 Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
