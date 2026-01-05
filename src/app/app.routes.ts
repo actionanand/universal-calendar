@@ -14,4 +14,13 @@ export const routes: Routes = [
     path: 'calendar',
     loadComponent: () => import('./calendar/calendar').then((m) => m.Calendar),
   },
+  {
+    path: 'perpetual-calendar',
+    loadComponent: () =>
+      import('./perpetual-calendar/perpetual-calendar').then((m) => m.PerpetualCalendar),
+  },
+  {
+    path: 'age-calculator',
+    loadComponent: () => import('./age-calculator/age-calculator').then((m) => m.AgeCalculator),
+  },
 ];

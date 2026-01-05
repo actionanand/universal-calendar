@@ -17,6 +17,12 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
           <li>
             <a routerLink="/calendar" routerLinkActive="active"> Calendar </a>
           </li>
+          <li>
+            <a routerLink="/perpetual-calendar" routerLinkActive="active"> Perpetual Calendar </a>
+          </li>
+          <li>
+            <a routerLink="/age-calculator" routerLinkActive="active"> Age Calculator </a>
+          </li>
         </ul>
       </div>
     </nav>
