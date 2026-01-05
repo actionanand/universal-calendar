@@ -9,7 +9,13 @@
     "build:gh": "ng build --base-href /universal-calendar/",
     "watch": "ng build --watch --configuration development",
     "copy-error-page": "cp dist/universal-calendar/browser/index.html dist/universal-calendar/browser/404.html",
-    "test": "ng test"
+    "test": "ng test",
+    "precommit": "run-s format:fix lint",
+    "format:fix": "pretty-quick --staged",
+    "format:check": "prettier --config ./.prettierrc --list-different \"src/{app,environments,assets}/**/*{.ts,.js,.json,.css,.scss}\"",
+    "format:all": "prettier --config ./.prettierrc --write \"src/{app,environments,assets}/**/*{.ts,.js,.json,.css,.scss}\"",
+    "lint": "ng lint",
+    "prepare": "husky"
   },
   "prettier": {
     "printWidth": 100,
@@ -39,8 +45,15 @@
     "@angular/build": "^21.0.3",
     "@angular/cli": "^21.0.3",
     "@angular/compiler-cli": "^21.0.0",
+    "angular-eslint": "21.1.0",
+    "eslint": "^9.39.1",
+    "husky": "^9.1.7",
     "jsdom": "^27.1.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^3.7.4",
+    "pretty-quick": "^4.2.2",
     "typescript": "~5.9.2",
+    "typescript-eslint": "8.47.0",
     "vitest": "^4.0.8"
   },
   "engines": {
