@@ -358,6 +358,7 @@ interface AgeBreakdown {
       transition:
         transform 0.2s,
         box-shadow 0.2s;
+      overflow: hidden;
     }
 
     .breakdown-card:hover {
@@ -366,17 +367,21 @@ interface AgeBreakdown {
     }
 
     .breakdown-value {
-      font-size: 1.8rem;
+      font-size: 1.5rem;
       font-weight: bold;
       color: #1976d2;
       margin-bottom: 0.5rem;
+      word-break: break-word;
+      overflow-wrap: break-word;
+      line-height: 1.3;
     }
 
     .breakdown-label {
       color: #666;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       text-transform: uppercase;
       letter-spacing: 0.5px;
+      line-height: 1.2;
     }
 
     .milestones-section {
