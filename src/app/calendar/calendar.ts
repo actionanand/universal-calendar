@@ -199,12 +199,44 @@ interface MonthData {
         padding: 1rem;
       }
 
-      .months-grid {
-        grid-template-columns: 1fr;
+      .calendar-header h1 {
+        font-size: 1.75rem;
       }
 
       .year-selector {
         flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      .year-input {
+        font-size: 1.2rem;
+        width: 100px;
+        padding: 0.4rem 0.75rem;
+      }
+
+      .year-nav-btn,
+      .today-btn {
+        padding: 0.4rem 0.75rem;
+        font-size: 1rem;
+      }
+
+      .months-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .month-card {
+        padding: 0.75rem;
+      }
+
+      .month-name {
+        font-size: 1.1rem;
+      }
+
+      .day-header,
+      .day-cell {
+        font-size: 0.8rem;
+        padding: 0.3rem;
       }
     }
   `,
