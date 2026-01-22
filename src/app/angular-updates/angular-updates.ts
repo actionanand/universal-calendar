@@ -234,15 +234,32 @@ import { CommonModule } from '@angular/common';
       }
 
       h1 {
-        font-size: 2rem;
+        font-size: 1.75rem;
       }
 
       h2 {
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+      }
+
+      .intro {
+        font-size: 1rem;
       }
 
       .features {
         grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      .feature-card {
+        padding: 1rem;
+      }
+
+      .feature-card h3 {
+        font-size: 1.1rem;
+      }
+
+      .highlights {
+        padding: 1rem;
       }
     }
   `,

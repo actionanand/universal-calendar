@@ -471,11 +471,37 @@ interface AgeBreakdown {
       }
 
       h1 {
-        font-size: 2rem;
+        font-size: 1.75rem;
+      }
+
+      h2 {
+        font-size: 1.4rem;
+      }
+
+      h3 {
+        font-size: 1.1rem;
+      }
+
+      .subtitle {
+        font-size: 0.95rem;
+      }
+
+      .calculator-section,
+      .info-section {
+        padding: 1rem;
       }
 
       .date-inputs {
         grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      .primary-result {
+        padding: 1.5rem;
+      }
+
+      .primary-result h2 {
+        font-size: 1.2rem;
       }
 
       .age-display {
@@ -486,8 +512,48 @@ interface AgeBreakdown {
         font-size: 2rem;
       }
 
+      .age-part .unit {
+        font-size: 0.95rem;
+      }
+
+      .summary-section,
+      .breakdown-section,
+      .milestones-section {
+        padding: 1rem;
+      }
+
       .breakdown-grid {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+      }
+
+      .breakdown-card {
+        padding: 1rem;
+      }
+
+      .breakdown-value {
+        font-size: 1.3rem;
+      }
+
+      .breakdown-label {
+        font-size: 0.75rem;
+      }
+
+      .milestones-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .milestone-card {
+        padding: 1rem;
+      }
+
+      .info-content {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      .info-card {
+        padding: 1rem;
       }
     }
   `,

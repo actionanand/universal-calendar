@@ -896,16 +896,78 @@ interface CalendarDay {
       }
 
       h1 {
-        font-size: 1.8rem;
+        font-size: 1.75rem;
+      }
+
+      h2 {
+        font-size: 1.3rem;
+      }
+
+      h3 {
+        font-size: 1.1rem;
       }
 
       section {
         padding: 1rem;
       }
 
+      .date-input-group {
+        gap: 1rem;
+      }
+
+      .manual-inputs {
+        flex-direction: column;
+      }
+
+      .input-field {
+        min-width: 100%;
+      }
+
+      .calendar-grid {
+        gap: 2px;
+      }
+
+      .day-header {
+        padding: 0.4rem;
+        font-size: 0.75rem;
+      }
+
+      .day-cell {
+        padding: 0.3rem;
+      }
+
+      .date-number {
+        font-size: 0.9rem;
+      }
+
+      .day-name {
+        font-size: 0.6rem;
+      }
+
+      .months-table,
+      .years-table {
+        font-size: 0.85rem;
+      }
+
+      .months-table th,
+      .months-table td,
+      .years-table th,
+      .years-table td {
+        padding: 0.5rem;
+      }
+
+      .breakdown-grid,
+      .tips-grid {
+        grid-template-columns: 1fr;
+      }
+
       .reference-tables,
       .patterns-grid {
         grid-template-columns: 1fr;
+      }
+
+      .table-wrapper {
+        overflow-x: auto;
       }
     }
   `,

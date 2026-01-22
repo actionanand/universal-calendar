@@ -78,6 +78,53 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
       background-color: rgba(255, 255, 255, 0.2);
       font-weight: 500;
     }
+
+    @media (max-width: 768px) {
+      .nav-container {
+        flex-direction: column;
+        padding: 0.75rem 1rem;
+        gap: 0.75rem;
+        align-items: stretch;
+      }
+
+      .nav-title {
+        font-size: 1.1rem;
+        text-align: center;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .nav-links {
+        flex-direction: row;
+        gap: 0.25rem;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: thin;
+        padding-bottom: 0.25rem;
+      }
+
+      .nav-links::-webkit-scrollbar {
+        height: 3px;
+      }
+
+      .nav-links::-webkit-scrollbar-thumb {
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 3px;
+      }
+
+      .nav-links li {
+        flex-shrink: 0;
+      }
+
+      .nav-links a {
+        text-align: center;
+        padding: 0.5rem 0.75rem;
+        font-size: 0.85rem;
+        white-space: nowrap;
+        display: block;
+      }
+    }
   `,
 })
 export class NavBar {}
